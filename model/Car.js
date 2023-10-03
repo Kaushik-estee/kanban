@@ -16,7 +16,7 @@ const carSchema = new mongoose.Schema({
   image4: { type: String, required: true },
   image5: { type: String, required: false },
   image6: { type: String, required: false },
-  booked: { type: Boolean, required: false }
+  booked: { type: String, required: false }
 }, {
   versionKey: false,
 });

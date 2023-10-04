@@ -2,6 +2,7 @@
 const mongoose = require('mongoose');
 
 const carSchema = new mongoose.Schema({
+  
   year: { type: Number, required: true },
   make: { type: String, required: true },
   model: { type: String, required: true },
@@ -20,5 +21,7 @@ const carSchema = new mongoose.Schema({
 }, {
   versionKey: false,
 });
+
+
 
 module.exports = mongoose.model('Car', carSchema);
